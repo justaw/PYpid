@@ -1,0 +1,47 @@
+Zonenregler auf Pi Basis
+
+Inputs:
+
+  - Ist Temperatur des Raumes vom Sensormodul (Raspi mit Temp, Feuchte und Beleuchtungsstärke)
+  - Temperatur von Vor und RÜcklauf der Deckenheizung / -kühlung mittels Anlegefühler auf OneWire Basis
+  - Overrideschalter für Testfahrten der Ventile
+  
+Outputs:
+  - 3x 2 Triac Ausgänge für zwei Zweiwege Ventil im WW/KW Vorlauf und  ein Dreiwegeventil für den  WW/KW Rücklauf.
+  - Statusanzeige mit LEDs (Verbindung mit Sensormodul, allgemeine connectivity, Temperaturanomalien, H/C Modus tbd)
+  
+Rahmenbedingungen:
+1. 4 Rohr System
+2. Cu pipes auf ALU Heatspreader auf TB Decke aufgelegt
+3. H/C Leistung wird mit Stellventilen in den Vorläufen eingestellt
+4. Heizfläche selbst kann entweder heizen oder kühlen
+5. sehr träge, teilweise erst nach 0,5 - 1h Reaktion
+   - Wasser muss erst die pipes fluten
+   - Kupfer + Alu erwärme 
+   - die GK Decke erwärmen
+   - relativ hoher Wärmedurchgangswiderstand des GK
+6. im Prizip nur Strahlungswärme auf Wände, Fussboden und Objekte im Raum
+7. VL Temp darf nicht zu hoch sein, sonst unangenehmes Wärmegefühl von oben, Auslegung auf 40°C VL bei 5K Spreizung
+8. hydraulische Gegebenheiten nicht zu 100% geklärt
+
+
+Technik
+
+- Zonenregler auf 230V Ventilantriebe wirkend
+- stetige Regelung auf 2x VL                                       
+- Umschaltung des Rücklaufes mittels 3 Wege Ventil, je nach Modus (H/C)  RL Heizfläche __/->   Warm RL 
+                                                                   \->   Kalt RL
+- Totband einstellbar um "flattern" zu verhindern
+- System sollte Umkehrpunkt vorhersagen und P/I Anteile anpassen können
+- weil Pkt 8. aus Rahmenbedingunen 
+  - Überwachung der VL/RL Temperaturen nötig so kann ein regenläufiges Anfahren der Heizdecke erkannt werden
+  - manuelles Fahren der Ventile nötig
+- Anbindung der Nodes 
+  - WiFi  
+  - Mesh auf BTLE
+  - Modbus
+  - 10/100 baseT
+
+- 
+- 
+  

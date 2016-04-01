@@ -1,14 +1,11 @@
 Zonenregler auf Pi Basis
 
-Inputs:
+What? 
 
-  - Ist Temperatur des Raumes vom Sensormodul (Raspi mit Temp, Feuchte und Beleuchtungsstärke)
-  - Temperatur von Vor und RÜcklauf der Deckenheizung / -kühlung mittels Anlegefühler auf OneWire Basis
-  - Overrideschalter für Testfahrten der Ventile
-  
-Outputs:
-  - 3x 2 Triac Ausgänge für zwei Zweiwege Ventil im WW/KW Vorlauf und  ein Dreiwegeventil für den  WW/KW Rücklauf.
-  - Statusanzeige mit LEDs (Verbindung mit Sensormodul, allgemeine connectivity, Temperaturanomalien, H/C Modus tbd)
+- Ersatz für unpassende Zonenregler in einem Bürogebäude 
+- bestehende Regler sind für ein FanCoil konzipiert und decken nicht die Belange ab, die mit einer trägen Heizdecke einhergehen
+- "closed" system, jeder tiefere Eingriff erzeugt Kosten (externes KnowHow), Ergebnis meist nur bedingt befriedigend
+- 
   
 Rahmenbedingungen:
 1. 4 Rohr System
@@ -41,7 +38,7 @@ Technik
   - Mesh auf BTLE
   - Modbus
   - 10/100 baseT
-
-- 
-- 
+ 
+ 
+ ....
   

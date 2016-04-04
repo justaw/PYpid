@@ -34,8 +34,8 @@ Technik
   - Überwachung der VL/RL Temperaturen nötig so kann ein regenläufiges Anfahren der Heizdecke erkannt werden
   - manuelles Fahren der Ventile nötig
 - Anbindung der Nodes 
-  - WiFi  
-  - Mesh auf BTLE
+  - WiFi (onboard mit WPA supplicant)  
+  - Mesh auf BTLEn 
   - Modbus
   - 10/100 baseT
  

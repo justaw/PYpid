@@ -27,7 +27,7 @@ Technik
 - Zonenregler auf 230V Ventilantriebe wirkend
 - stetige Regelung auf 2x VL                                       
 - Umschaltung des Rücklaufes mittels 3 Wege Ventil, je nach Modus (H/C)  RL Heizfläche __/->   Warm RL 
-                                                                   \->   Kalt RL
+                                                                  			      \->   Kalt RL
 - Totband einstellbar um "flattern" zu verhindern
 - System sollte Umkehrpunkt vorhersagen und P/I Anteile anpassen können
 - weil Pkt 8. aus Rahmenbedingunen 
@@ -39,6 +39,5 @@ Technik
   - Modbus
   - 10/100 baseT
  
- 
- ....
+  ....
   
